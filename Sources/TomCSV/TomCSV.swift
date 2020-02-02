@@ -22,7 +22,7 @@ public struct Tom : CustomStringConvertible{
     ///If empty lines from the source should be ignored.
     let trimLines : Bool
     
-    init(delimiter: Character = ",", terminator: Character = "\n", quote: Character = "\"", trimEdges : Bool = true, trimLines : Bool = true) {
+    public init(delimiter: Character = ",", terminator: Character = "\n", quote: Character = "\"", trimEdges : Bool = true, trimLines : Bool = true) {
         
         self.delimiter = delimiter
         self.terminator = terminator
@@ -33,7 +33,7 @@ public struct Tom : CustomStringConvertible{
 
 
     ///Does the actual work of turning the source material into a 2d array of strings.
-    func parse(_ source: String) -> [[String]]{
+    public func parse(_ source: String) -> [[String]]{
         var result = [[String]]()
 
         //state for our parser state machine
