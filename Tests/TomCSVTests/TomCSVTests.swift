@@ -2,7 +2,7 @@ import XCTest
 @testable import TomCSV
 
 final class TomCSVTests: XCTestCase {
-    flet easy1 = """
+    let easy1 = """
         1,2,3,4
         a,b,c,d
         q,w,e,r
