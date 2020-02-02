@@ -55,6 +55,10 @@ CSVs, of course, don't have a formal spec, but the closest we have is [RFC4180](
 
 Specific things from RFC4180 that Tom won't handle correctly are headers and escaped quote marks inside a quoted field.
 
+## But... why?
+
+I needed a slightly better parser than just splitting strings, and knocked this together over a weekend.  I thought it would make a good test case to take the Swift Package Manager out for a spin.
+
 
 ## Notice
 
